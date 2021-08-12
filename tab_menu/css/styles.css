@@ -1,0 +1,48 @@
+body {
+  font-size: 18px;
+}
+
+.container {
+  margin: 30px auto;
+  width: 700px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 8px 0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.menu li a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* list階下のa要素でactiveクラスがついていないものにhoverすると */
+.menu li a:not(.active):hover {
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+.content.active {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  min-height: 150px;
+  padding: 12px;
+}
+
+.content {
+  display: none;
+}
