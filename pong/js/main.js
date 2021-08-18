@@ -6,7 +6,6 @@
 
 
   /*** Ballクラス ***/
-  /*** Ballクラス ***/
   class Ball {
     constructor(canvas) {
       this.canvas = canvas;
@@ -196,13 +195,10 @@
     }
   }
 
-
   const canvas = document.querySelector('canvas');
   if (typeof canvas.getContext === 'undefined') {
     return;
   }
 
   new Game(canvas);
-
-
 })();
